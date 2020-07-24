@@ -52,7 +52,7 @@ func bind(contract string) (error) {
 	bin := fmt.Sprintf("%s.bin",binName)
 	abi := contract
 
-    app := "abigen"
+    app := "abigen-gm"
 	arg00 := "--bin"
 	arg11 := bin
     arg0 := "--abi"
@@ -63,8 +63,9 @@ func bind(contract string) (error) {
     arg5 := name
     arg6 := "--out"
     arg7 := output
+	arg8 := "--smcrypto=true"
 
-    cmd := exec.Command(app, arg00, arg11, arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+    cmd := exec.Command(app, arg00, arg11, arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
     stdout, err := cmd.CombinedOutput()
     if err != nil {
     	return err

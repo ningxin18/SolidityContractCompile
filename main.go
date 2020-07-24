@@ -81,7 +81,7 @@ func main() {
 	}
 
 	if initCommand.Parsed() {
-		lethInit()
+		compileInit()
 		os.Exit(0)
 	}
 
@@ -112,7 +112,7 @@ func main() {
 	}
 }
 
-func lethInit() {
+func compileInit() {
 	files, err := core.SearchDirectory("./")
 	if len(files) > 1 {
 		logger.FatalError("cannot init in non-empty directory.")

@@ -47,7 +47,7 @@ func compile(contract string) error {
 	logger.Info(fmt.Sprintf("compiling %s", path.Base(contract)))
 
 	// generate bytecode
-    app := "solc"
+    app := "solc-gm"
     arg0 := "--bin"
     arg1 := contract
     arg2 := "-o"
@@ -70,7 +70,7 @@ func compile(contract string) error {
     }
 
     // generate abi
-    app = "solc"
+    //app = "solc-gm"
     arg0 = "--abi"
     arg1 = contract
     arg2 = "-o"
