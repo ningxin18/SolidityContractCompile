@@ -1,0 +1,50 @@
+{
+	"networks": {
+		"default": {
+			"url": "http://localhost:8545",
+			"gas": 5000000,
+			"gasPrice": 10000000
+		},
+		"testnet": {
+			"url": "http://localhost:8545",
+			"gas": 5000000,
+			"gasPrice": 10000000,
+			"from": "0x8f9b540b19520f8259115a90e4b4ffaeac642a30",
+			"keystore": "./keystore",
+			"password": "password"
+		},
+		"rinkeby": {
+			"url": "https://rinkeby.infura.io",
+			"from": "0xe8b7b81f281a947840de4b23f40442b3843c5f49",
+			"keystore": "./keystore",
+			"password": "password",
+			"gas": 5000000,
+			"gasPrice": 100000000,
+			"id": "4"
+		},
+		"ropsten": {
+			"url": "https://ropsten.infura.io",
+			"from": "0xe8b7b81f281a947840de4b23f40442b3843c5f49",
+			"keystore": "./keystore",
+			"password": "password",
+			"gas": 5000000,
+			"gasPrice": 100000000,
+			"id": "3"
+		},
+		"kovan": {
+			"url": "https://kovan.infura.io",
+			"from": "0xe8b7b81f281a947840de4b23f40442b3843c5f49",
+			"keystore": "./keystore",
+			"password": "password",
+			"gas": 5000000,
+			"gasPrice": 100000000,
+			"id": "42"
+		},
+		"ganache": {
+			"name": "ganache",
+			"url": "http://localhost:8545",
+			"gas": 5000000,
+			"gasPrice": 10000000
+		}
+	}
+}
