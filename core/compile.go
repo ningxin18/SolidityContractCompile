@@ -52,8 +52,8 @@ func compile(contract string) error {
     arg1 := contract
     arg2 := "-o"
     arg3 := "build/"
-	args4 := "--overwrite"
-    cmd := exec.Command(app, arg0, arg1, arg2, arg3,args4)
+	//args4 := "--overwrite"
+    cmd := exec.Command(app, arg0, arg1, arg2, arg3)
     stdout, err := cmd.CombinedOutput()
 
     out := string(stdout)
@@ -76,7 +76,7 @@ func compile(contract string) error {
     arg2 = "-o"
     arg3 = "build/"
 
-    cmd = exec.Command(app, arg0, arg1, arg2, arg3,args4)
+    cmd = exec.Command(app, arg0, arg1, arg2, arg3)
     stdout, err = cmd.Output()
 
     if err != nil {
